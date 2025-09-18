@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepraj Rane - Python & AI Engineer</title>
+    <link rel="stylesheet" href="portfolio_css.css">
+    <link rel="JavaScript" href="portfolio_js.js">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Loading Screen 
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Initializing AI Portfolio...</p>
+        </div>
+    </div>
+    -->
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>🐍 Deepraj Rane</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link" data-section="home">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Floating Particles -->
+    <div class="particles-container" id="particles-container"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Hello World! I'm</span>
+                    <span class="name">Deepraj Rane</span>
+                    <span class="role">Python & AI Engineer</span>
+                </h1>
+                <p class="hero-description">
+                    Passionate Python developer and AI enthusiast with 1 year of experience in building
+                    intelligent solutions using machine learning, deep learning, and cutting-edge AI technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="resume.pdf" class="btn btn-primary" download>
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <button class="btn btn-secondary" id="toggle-contact-btn">
+                        <i class="fas fa-robot"></i> Let's Build AI Together
+                    </button>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/dipraj-rane-704660209?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBxrFN7w8QgGVxN5IpvSFww%3D%3D" class="social-link" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/DiprajRane4347/OBD.git" class="social-link" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" data-tooltip="Kaggle">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                    <a href="#" class="social-link" data-tooltip="Stack Overflow">
+                        <i class="fab fa-stack-overflow"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card" id="floating-card">
+                    <div class="card-3d">
+                        <div class="card-front">
+                            <div class="profile-image">
+                                <img src="profile.png"
+                                    alt="Profile">
+                            </div>
+                            <h3>Python & AI Engineer</h3>
+                            <p>Building Intelligent Solutions</p>
+                        </div>
+                        <div class="card-back">
+                            <div class="skills-preview">
+                                <div class="skill-item">Python</div>
+                                <div class="skill-item">TensorFlow</div>
+                                <div class="skill-item">Pandas</div>
+                                <div class="skill-item">Scikit-learn</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-icon" data-icon="🐍" style="--delay: 0s;"></div>
+                    <div class="floating-icon" data-icon="🤖" style="--delay: 1s;"></div>
+                    <div class="floating-icon" data-icon="🧠" style="--delay: 2s;"></div>
+                    <div class="floating-icon" data-icon="📊" style="--delay: 3s;"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Passionate about Python and AI technologies</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-card">
+                        <h3>Who Am I?</h3>
+                        <p>
+                            I'm a dedicated Python and AI Engineer with 1 year of hands-on experience in
+                            developing machine learning models, data analysis solutions, and intelligent
+                            applications. My journey in AI started with curiosity about how machines can learn
+                            and has evolved into a deep passion for creating impactful AI solutions.
+                        </p>
+                        <p>
+                            I specialize in Python development, machine learning algorithms, data science,
+                            and neural networks. I'm constantly learning new AI technologies and staying
+                            updated with the latest trends in artificial intelligence and machine learning.
+                        </p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="15">3</span>
+                                <span class="stat-label">AI Projects Completed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="1">1</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="8">2</span>
+                                <span class="stat-label">ML Models Deployed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-3d-container">
+                        <div class="rotating-cube" id="rotating-cube">
+                            <div class="cube-face front">Machine Learning</div>
+                            <div class="cube-face back">Deep Learning</div>
+                            <div class="cube-face right">Data Science</div>
+                            <div class="cube-face left">Python Dev</div>
+                            <div class="cube-face top">Neural Networks</div>
+                            <div class="cube-face bottom">AI Research</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-level="90">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="70">
+                            <div class="skill-info">
+                                <span class="skill-name">Machine Learning</span>
+                                <span class="skill-percentage">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="65">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percentage">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">TensorFlow</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="80">
+                            <div class="skill-info">
+                                <span class="skill-name">PyTorch</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="88">
+                            <div class="skill-info">
+                                <span class="skill-name">Scikit-learn</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="82">
+                            <div class="skill-info">
+                                <span class="skill-name">Keras</span>
+                                <span class="skill-percentage">82%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Data Science & Tools</h3>
+                    <div class="skills-list">
+                        <div class="skill-item" data-level="92">
+                            <div class="skill-info">
+                                <span class="skill-name">Pandas</span>
+                                <span class="skill-percentage">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="88">
+                            <div class="skill-info">
+                                <span class="skill-name">NumPy</span>
+                                <span class="skill-percentage">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="85">
+                            <div class="skill-info">
+                                <span class="skill-name">Matplotlib/Seaborn</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-level="75">
+                            <div class="skill-info">
+                                <span class="skill-name">Jupyter Notebook</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">AI Projects</h2>
+                <p class="section-subtitle">Showcasing my machine learning and AI projects</p>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+                <button class="filter-btn" data-filter="dl">Deep Learning</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+                <button class="filter-btn" data-filter="cv">Computer Vision</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=Stock+Price+Predictor"
+                            alt="Object Detection using YOLO">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="btn-project" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/DiprajRane4347/OBD.git" class="btn-project" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Object Detection using YOLO</h3>
+                        <p>Implemented a real-time object detection system using YOLO (You Only Look Once) algorithm.
+                            Achieved 90% mAP (mean Average Precision) on COCO dataset.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">LSTM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="cv">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/764ba2/ffffff?text=Face+Recognition+System"
+                            alt="Iris-Flower Classification">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="btn-project" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/DiprajRane4347/iris-flower-classification-project.git" class="btn-project" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Iris-Flower Classification</h3>
+                        <p>Implemented a flower classification model using the Iris dataset. Achieved 98% accuracy using
+                            decision trees and random forests.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">SQLite</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="nlp">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/f093fb/ffffff?text=Sentiment+Analyzer"
+                            alt="Chat App using Java">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="btn-project" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/DiprajRane4347/ChatApp.git" class="btn-project" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Chat App using Java</h3>
+                        <p>Developed a chat application using Java and Spring Boot. Implemented WebSocket for real-time
+                            communication and integrated NLP for message sentiment analysis.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Spring Boot</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Transformers</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/4facfe/ffffff?text=Recommendation+System"
+                            alt="Virtual Classroom">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="btn-project" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/DiprajRane4347/Virtual-Classroom.git" class="btn-project" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Virtual Classroom</h3>
+                        <p>Teaching tool to assist each and every student to learn in an interactive manner in today’s situation of a pandemic.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="dl">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/ff6b6b/ffffff?text=Chatbot+AI" alt="Chatbot">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="btn-project" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="btn-project" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Intelligent Chatbot</h3>
+                        <p>AI-powered chatbot using transformer architecture and natural language understanding. Trained
+                            on custom dataset with intent recognition and entity extraction.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">spaCy</span>
+                            <span class="tech-tag">FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="ml">
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/400x250/51cf66/ffffff?text=Data+Analytics+Dashboard"
+                            alt="Data Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-buttons">
+                                <a href="#" class="btn-project" data-tooltip="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="btn-project" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Data Analytics Dashboard</h3>
+                        <p>Interactive dashboard for data visualization and analysis using Streamlit. Features real-time
+                            data processing, statistical analysis, and predictive modeling capabilities.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Streamlit</span>
+                            <span class="tech-tag">Plotly</span>
+                            <span class="tech-tag">Pandas</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey in AI and Python development</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 - Present</div>
+                        <h3>Python & AI Engineer</h3>
+                        <h4>Tech Innovations Company</h4>
+                        <p>Working on machine learning projects and AI solutions. Developing predictive models,
+                            implementing neural networks, and creating data-driven applications.</p>
+                        <ul>
+                            <li>Built and deployed 5+ machine learning models in production</li>
+                            <li>Improved model accuracy by 25% through feature engineering and optimization</li>                            
+                            <li>Collaborated with cross-functional teams on AI product development</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3>Junior Data Scientist Intern</h3>
+                        <h4>AI Solutions Startup</h4>
+                        <p>Gained hands-on experience in data science and machine learning. Worked on real-world
+                            datasets and contributed to AI research projects.</p>
+                        <ul>
+                            <li>Analyzed large datasets using Python and statistical methods</li>
+                            <li>Developed predictive models for customer behavior analysis</li>
+                            <li>Created data visualizations and reports for stakeholders</li>
+                            <li>Participated in AI research and experimentation projects</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>Python Developer - Freelance</h3>
+                        <h4>Various Clients</h4>
+                        <p>Developed Python applications and automation scripts for small businesses and startups. Built
+                            web scraping tools and data processing solutions.</p>
+                        <ul>
+                            <li>Created 5+ Python automation scripts for business processes</li>
+                            <li>Built web scraping solutions for data collection</li>
+                            <li>Developed REST APIs using Flask and Django</li>
+                            <li>Delivered projects on time with 100% client satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Build AI Together</h2>
+                <p class="section-subtitle">Ready to collaborate on your next AI project?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>diprajrane@gmail.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Phone</h3>
+                        <p>+91 7498624347</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Location</h3>
+                        <p>Pune, India</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon" >
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h3>LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/dipraj-rane-4347b0204/" target="_blank">Connect with me professionally</a></p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <select id="project-type" name="project-type" required>
+                            <option value="">Select Project Type</option>
+                            <option value="ml">Machine Learning Project</option>
+                            <option value="ai">AI Application Development</option>
+                            <option value="data">Data Analysis & Visualization</option>
+                            <option value="automation">Python Automation</option>
+                            <option value="consulting">AI Consulting</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <label for="project-type">Project Type</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Tell me about your AI project ideas..." required></textarea>
+                        <label for="message">Project Details</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-robot"></i>
+                        Start AI Collaboration
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Deepraj Rane- Python & AI Engineer.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/dipraj-rane-704660209?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BBxrFN7w8QgGVxN5IpvSFww%3D%3D" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/DiprajRane4347/OBD.git" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-kaggle"></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-stack-overflow"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor">
+        <div class="cursor-dot"></div>
+        <div class="cursor-outline"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        // Toggle contact section visibility
+        document.getElementById('toggle-contact-btn').addEventListener('click', function() {
+            var contactSection = document.getElementById('contact');
+            if (contactSection.style.display === 'none' || contactSection.style.display === '') {
+                contactSection.style.display = 'block';
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                contactSection.style.display = 'none';
+            }
+        });
+        // Ensure contact section is visible on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            var contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+
+</html>
