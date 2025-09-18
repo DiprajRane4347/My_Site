@@ -51,7 +51,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="greeting">Hello World! I'm</span>
+                    <span class="greeting">Hello I'm</span>
                     <span class="name">Deepraj Rane</span>
                     <span class="role">Python & AI Engineer</span>
                 </h1>
@@ -123,7 +123,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">About Me</h2>
-                <p class="section-subtitle">Passionate about Python and AI technologies</p>
+               <!--<p class="section-subtitle">Passionate about Python and AI technologies</p>-->
             </div>
             <div class="about-content">
                 <div class="about-text">
@@ -177,7 +177,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Technical Skills</h2>
-                <p class="section-subtitle">Technologies and tools I work with</p>
+               <!--<p class="section-subtitle">Technologies and tools I work with</p>> -->
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
@@ -312,7 +312,7 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">AI Projects</h2>
-                <p class="section-subtitle">Showcasing my machine learning and AI projects</p>
+               <!--<p class="section-subtitle">Showcasing my machine learning and AI projects</p>-->
             </div>
             <div class="projects-filter">
                 <button class="filter-btn active" data-filter="all">All</button>
@@ -501,9 +501,9 @@
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">2025 - Present</div>
+                        <div class="timeline-date">2025 - Internship</div>
                         <h3>Python & AI Engineer</h3>
-                        <h4>Tech Innovations Company</h4>
+                        <h4>Sumago Infotech pvt.ltd </h4>
                         <p>Working on machine learning projects and AI solutions. Developing predictive models,
                             implementing neural networks, and creating data-driven applications.</p>
                         <ul>
@@ -596,7 +596,8 @@
                         <input type="email" id="email" name="email" placeholder="Your Email" required>
                         <label for="email">Email</label>
                     </div>
-                    <div class="form-group">
+                    <!--<div class="form-group">
+                        <label for="project-type">Project Type</label>
                         <select id="project-type" name="project-type" required>
                             <option value="">Select Project Type</option>
                             <option value="ml">Machine Learning Project</option>
@@ -606,18 +607,35 @@
                             <option value="consulting">AI Consulting</option>
                             <option value="other">Other</option>
                         </select>
-                        <label for="project-type">Project Type</label>
                     </div>
+                -->
                     <div class="form-group">
                         <textarea id="message" name="message" rows="5"
                             placeholder="Tell me about your AI project ideas..." required></textarea>
                         <label for="message">Project Details</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary" onclick="sendEmail(); return false;">
                         <i class="fas fa-robot"></i>
                         Start AI Collaboration
                     </button>
                 </form>
+                <script>
+                    function sendEmail() {
+                        const name = document.getElementById("name").value;
+                        const email = document.getElementById("email").value;
+                        const message = document.getElementById("message").value;
+                        
+                        const mailtoLink = `mailto:diprajrane@gmail.com?subject=Project Inquiry from ${name}&body=Name: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0AProject Details:%0D%0A${message}`;
+                        
+                        window.location.href = mailtoLink;
+
+                        // Show popup after sending
+                        setTimeout(() => {
+                            alert("Thank you for your message! I'll get back to you soon.");
+                            document.getElementById("contact-form").reset();
+                        }, 1000);
+                    }
+                </script>
             </div>
         </div>
     </section>
